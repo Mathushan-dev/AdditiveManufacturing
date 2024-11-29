@@ -1,0 +1,10 @@
+
+*.dll
+*.vsidx
+/.vs
+*.json
+*.exe
+/AdditiveManufacturingMachine.Tests/bin
+/AdditiveManufacturingMachine.Tests/obj
+/AdditiveManufacturingMachine/bin
+/AdditiveManufacturingMachine/obj
