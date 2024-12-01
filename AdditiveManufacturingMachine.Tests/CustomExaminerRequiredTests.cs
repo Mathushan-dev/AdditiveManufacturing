@@ -70,9 +70,7 @@ namespace AdditiveManufacturingMachine.Tests
             QuadLaser quadLaser = new QuadLaser(_dynamicMachine);
             _dynamicMachine.AddFeature(quadLaser);
 
-            Assert.DoesNotThrow(
-                () => _dynamicMachine.RemoveFeature<ReducedBuildVolume>(),
-                "Removing a nonexistent feature should not throw an exception");
+            Assert.DoesNotThrow(() => _dynamicMachine.RemoveFeature<ReducedBuildVolume>());
         }
 
         [Test(Author = "MM")]
