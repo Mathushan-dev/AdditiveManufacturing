@@ -1,8 +1,7 @@
-﻿using NUnit.Framework;
-using Moq;
+﻿using AdditiveManufacturingMachine.Decorators;
 using AdditiveManufacturingMachine.Interfaces;
-using AdditiveManufacturingMachine.Decorators;
 using AdditiveManufacturingMachine.Models;
+using Moq;
 
 namespace AdditiveManufacturingMachine.UnitTests.Models
 {
