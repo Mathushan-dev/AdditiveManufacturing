@@ -1,8 +1,7 @@
-﻿using System;
-using System.Text;
-using AdditiveManufacturingMachine.Decorators;
+﻿using AdditiveManufacturingMachine.Decorators;
 using AdditiveManufacturingMachine.Interfaces;
 using AdditiveManufacturingMachine.Managers;
+using System.Text;
 
 namespace AdditiveManufacturingMachine.Models
 {
@@ -12,7 +11,7 @@ namespace AdditiveManufacturingMachine.Models
     public class DynamicMachine : IMachine
     {
         private readonly IMachine _baseMachine;
-        private readonly MachineManager _machineManager;
+        private readonly DynamicMachineManager _machineManager;
         private readonly double _baseCost;
         private readonly string _baseDescription;
 
@@ -27,7 +26,7 @@ namespace AdditiveManufacturingMachine.Models
         public DynamicMachine(IMachine baseMachine)
         {
             _baseMachine = baseMachine ?? throw new ArgumentNullException(nameof(baseMachine));
-            _machineManager = new MachineManager();
+            _machineManager = new DynamicMachineManager();
             _baseCost = _baseMachine.Cost;
             _baseDescription = _baseMachine.Description;
             _isCacheUpdated = false;

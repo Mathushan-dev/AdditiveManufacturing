@@ -6,15 +6,15 @@ using Moq;
 namespace AdditiveManufacturingMachine.UnitTests.Managers
 {
     [TestFixture]
-    internal class MachineManagerTests
+    internal class DynamicMachineManagerTests
     {
-        private MachineManager _machineManager;
+        private DynamicMachineManager _machineManager;
         private TestFeatureDecorator _testFeature;
 
         [SetUp]
         public void Setup()
         {
-            _machineManager = new MachineManager();
+            _machineManager = new DynamicMachineManager();
             _testFeature = new TestFeatureDecorator(Mock.Of<IMachine>());
         }
 

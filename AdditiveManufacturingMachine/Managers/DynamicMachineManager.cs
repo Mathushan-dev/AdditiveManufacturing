@@ -5,14 +5,14 @@ namespace AdditiveManufacturingMachine.Managers
     /// <summary>
     /// Manages the features applied to a machine.
     /// </summary>
-    public class MachineManager
+    public class DynamicMachineManager
     {
         private readonly Dictionary<Type, MachineDecorator> _features;
 
         /// <summary>
-        /// Initialises a new instance of the <see cref="MachineManager"/> class.
+        /// Initialises a new instance of the <see cref="DynamicMachineManager"/> class.
         /// </summary>
-        public MachineManager()
+        public DynamicMachineManager()
         {
             _features = [];
         }
